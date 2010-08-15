@@ -1,6 +1,3 @@
-from PMS import *
-from PMS.Objects import *
-from PMS.Shortcuts import *
 
 VIDEO_PREFIX   = "/video/railscasts"
 BASE_URL       = "http://feeds.feedburner.com/railscasts_ipod?format=xml"
@@ -23,4 +20,5 @@ def VideoMenu():
       description = item.find('description').text.strip()
       url         = item.find('enclosure').get("url").strip()
       dir.Append(VideoItem(url, title=title, summary=description, subtitle=date[0:-15]))
+    dir.Reverse()
     return dir
