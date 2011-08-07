@@ -30,5 +30,10 @@
 	<string>MacOSX,LGTV</string>
 	<key>PlexFrameworkVersion</key>
 	<string>2</string>
+	<key>PlexSearchServices</key>
+	<dict>
+	    <key>Railscasts</key>
+	    <string>com.plexapp.search.railscasts</string>
+	</dict>
 </dict>
 </plist>
